@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: gcc.exe build active file",
+            "type": "shell",
+            "command": "C:\\cygwin64\\bin\\gcc.exe",
+            "args": [
+                "-g",                           // Include debugging information
+                "${file}",                      // Compile the active file
+                "-o", "${fileDirname}/${fileBasenameNoExtension}.exe" // Output executable
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task for building C/C++ files with GCC on Cygwin"
+        }
+    ]
+}
